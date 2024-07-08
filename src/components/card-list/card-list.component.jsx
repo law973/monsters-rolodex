@@ -6,6 +6,7 @@ const CardList = ({ monsters }) => (
         {monsters.map(monster => {
             return (
                 <Card 
+                    key={monster.id}
                     monster={monster}
                 />
         )})}
